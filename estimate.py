@@ -4,7 +4,7 @@ import random
 def wallis(n):
 	q=1
 	for i in range(1,n+1):
-		q=((4*i**2)/(4*i**2)-1)*q
+		q=((4*i**2)/((4*i**2)-1))*q
 	pi=q*2
 	return pi
 class TestWallis(unittest.TestCase):
