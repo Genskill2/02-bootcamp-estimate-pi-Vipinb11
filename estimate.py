@@ -3,7 +3,7 @@ import unittest
 import random
 def wallis(n):
 	q=1
-	for i in range(1,q-1):
+	for i in range(1,n-1):
 		q=((4*i**2)/(4*i**2)-1)
 	pi=q*2;
 	return pi
@@ -27,7 +27,7 @@ def monte_carlo(n):
 		e=((x**2)+(y**2))**0.5
 		if(e<=1):
 			w=w+1
-	pii=c/n
+	pii=w/n
 	pi=4*pii
 	return pi
 		
