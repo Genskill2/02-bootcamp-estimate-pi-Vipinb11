@@ -3,9 +3,9 @@ import unittest
 import random
 def wallis(n):
 	q=1
-	for i in range(1,n-1):
-		q=((4*i**2)/(4*i**2)-1)
-	pi=q*2;
+	for i in range(1,n+1):
+		q=((4*i**2)/(4*i**2)-1)*q
+	pi=q*2
 	return pi
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
