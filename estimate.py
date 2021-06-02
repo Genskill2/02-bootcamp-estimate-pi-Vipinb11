@@ -3,7 +3,7 @@ import unittest
 import random
 def wallis(n):
 	q=1
-	for i in range(1,q-1)
+	for i in range(1,q-1):
 		q=((4*i**2)/(4*i**2)-1)
 	pi=q*2;
 	return pi
